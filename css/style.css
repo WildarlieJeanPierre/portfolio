@@ -1,0 +1,159 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+/* Header estil */
+header {
+  background-color: #0a84ff;
+  padding: 1em 0;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1.5em;
+}
+
+/* Logo sou bò gòch */
+.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 1em;
+}
+
+/* Tit la */
+.site-title {
+  flex: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  color: #fff;
+}
+
+/* Navigasyon sou bò dwat */
+nav {
+  display: flex;
+  gap: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Intro seksyon */
+main {
+  padding: 2em;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #010409;
+  color: #8b949e;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .logo-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .site-title {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 0.5em;
+  }
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 500px;
+  margin: 2em auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #161b22;
+  color: #fff;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #58a6ff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1f6feb;
+}
+.galerie {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.galerie h2 {
+  color: #0077ff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Conteneur pou blòk imaj yo */
+.grille-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+/* Estil pou chak imaj pwojè */
+.grille-images img {
+  width: 100%;
+  max-width: 240px; /* kontwole lajè */
+  border: 2px solid #007bff; /* bordur ble */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  object-fit: cover;
+}
+
+/* Efè sou souri oswa touche */
+.grille-images img:hover {
+  transform: scale(1.05);
+  border-color: #00bfff;
+  box-shadow: 0 6px 16px rgba(0, 191, 255, 0.3);
+}
+
+
+
+
+
